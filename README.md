@@ -4,7 +4,7 @@
 </p>
 <p align="center">Deploy do projeto no Netlify para fácil visualização: https://tuna-challenge.netlify.app/
 </p>
-<img src="./tuna-challenge.gif">
+<img align="center" src="./tuna-challenge.gif">
 
 📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostrar as localizações em que o serviço está presente atualmente
 

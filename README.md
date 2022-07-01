@@ -1,7 +1,7 @@
 <h1 align="center"> Tuna Challenge</h1>
 <p align="center">Projeto desenvolvido como um desafio oferecido pela empresa Tuna
 </p>
-<img src="./tuna-challenge.png">
+<img src="./tuna-challenge.gif">
 
 📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostras as localizações que o serviço está presente
 

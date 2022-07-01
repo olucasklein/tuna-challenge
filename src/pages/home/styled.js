@@ -67,6 +67,11 @@ export const Titulo = styled.h1`
   font-size: 3rem;
   margin: 0 0px 0px; 0px;
   color: #000;
+  cursor: pointer;
+  &:hover {
+  font-size: 3.1rem;  
+  transition: 1s;
+  }
 `;
 
 export const Paragrafo = styled.p`
@@ -82,6 +87,10 @@ export const Cards = styled.div`
   border: 15px solid #f9f9f9;
   border-radius: 25px;
   align-items: center;
+  &:hover {
+    box-shadow: 0 0 15em rgba(0, 0, 0, 0.55);
+    transition: 1s;
+  }
 `;
 
 export const CardC = styled.div`

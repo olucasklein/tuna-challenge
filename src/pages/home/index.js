@@ -6,13 +6,13 @@ import logotuna from "../../components/logotuna.svg";
 import nocode from "../../components/nocode.svg";
 
 function App(props) {
-  const [post, setPost] = useState([]);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     axios
       .get("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
       .then((response) => {
-        setPost(response.data);
+        setData(response.data);
       })
 
       .catch(() => {
@@ -42,12 +42,12 @@ function App(props) {
         <div className="nocode"></div>
       </S.Main>
       <div className="cards">
-        {post.map((post, key) => {
+        {data.map((data, key) => {
           return (
             <S.Cards>
               <S.CardC>
                 <S.Paragrafo>
-                  📍 {post.nome} - {post.sigla}
+                  📍 {data.nome} - {data.sigla}
                 </S.Paragrafo>
               </S.CardC>
             </S.Cards>

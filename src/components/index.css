@@ -22,6 +22,11 @@ body {
   background-position: center;
 }
 
+.logotuna:hover{
+  width: 168px;
+  transition: 1s;
+}
+
 .nocode {
   width: 350px;
   height: 350px;

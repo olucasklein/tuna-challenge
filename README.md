@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 <h1 align="center"> Tuna Challenge - Old Version </h1>
+=======
+<h1 align="center"> Tuna Challenge - React</h1>
+>>>>>>> 461c485decf4f6bde98b5f91c6230baed5e4b25c
 <p align="center">Projeto de landing page fictícia desenvolvido como um desafio oferecido pela empresa Tuna
 </p>
 <img src="./tuna-challenge.gif">
 
-📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostras as localizações que o serviço está presente
+📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostrar as localizações em que o serviço está presente atualmente
 
 <h2> 🎯 Ficou pendente: </h2>
+
 - Divisão dos Cards por regiões
 - Adicionar responsividade para mobile em geral
 

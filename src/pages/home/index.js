@@ -98,8 +98,8 @@ function App(props) {
           <div className="cards">
             {arrayCentroO.map((data, key) => {
               return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}{" "}
+                <S.Li></S.Li>
+                  📍 {data.nome} - {data.sigla}
                 </S.Li>
               );
             })}
@@ -111,7 +111,7 @@ function App(props) {
             {arrayNordeste.map((data, key) => {
               return (
                 <S.Li>
-                  📍 {data.nome} - {data.sigla}{" "}
+                  📍 {data.nome} - {data.sigla}
                 </S.Li>
               );
             })}

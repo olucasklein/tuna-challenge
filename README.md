@@ -1,4 +1,4 @@
-<h1 align="center"> Tuna Challenge</h1>
+<h1 align="center"> Tuna Challenge - Old Version </h1>
 <p align="center">Projeto de landing page fictícia desenvolvido como um desafio oferecido pela empresa Tuna
 </p>
 <img src="./tuna-challenge.gif">

@@ -3,7 +3,9 @@
 <p align="center">Projeto de landing page fictícia desenvolvido como um desafio oferecido pela empresa Tuna.</p>
 <p align="center">Deploy do projeto no Netlify para fácil visualização: https://tuna-challenge.netlify.app/</p>
 
+<p align="center">
 <img src="./tuna-challenge.gif">
+</p>  
 
 📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostrar as localizações em que o serviço está presente atualmente
 

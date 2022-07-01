@@ -1,8 +1,13 @@
-<h1 align="center"> Rep-Finder</h1>
-<p align="center">Projeto desenvolvido durante o Hiring coders da VTEX com Gama Academy</p>
-<img src="./rep-finder.png">
+<h1 align="center"> Tuna Challenge - Old Version </h1>
+<p align="center">Projeto de landing page fictícia desenvolvido como um desafio oferecido pela empresa Tuna
+</p>
+<img src="./tuna-challenge.gif">
 
-📖 - Funcionamento da aplicação: na página inicial, insere-se um nome de usuário do Github. A aplicação, por sua vez, busca por esse usuário, recupera seus repositórios, lista e os exibe numa outra página.
+📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostras as localizações que o serviço está presente
+
+<h2> 🎯 Ficou pendente: </h2>
+- Divisão dos Cards por regiões
+- Adicionar responsividade para mobile em geral
 
 <h2>🚀 Tecnologias utilizadas: </h2>
 
@@ -11,9 +16,10 @@
 - JavaScript
 - React
 - Styled Components
+- Axios
 
 <h2>Para iniciar o projeto use: </h2>
-git clone https://github.com/olucasklein/gama-rep-finder.git
+git clone https://github.com/olucasklein/tuna-challenge.git
 
 <h2>Para iniciar a aplicação:</h2>
 

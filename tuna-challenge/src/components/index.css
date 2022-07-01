@@ -13,6 +13,8 @@ body {
 
 .logotuna {
   width: 154px;
+  min-width: 80px;
+  cursor: pointer;
   height: 150px;
   display: block;
   background-image: url("../components/logotuna.svg");
@@ -21,10 +23,26 @@ body {
   background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  .logotuna {
+    margin-right: 12px;
+  }
+  .nocode {
+    min-width: 100px;
+    margin: 0;
+  }
+}
+
+.logotuna:hover{
+  width: 168px;
+  transition: 1s;
+}
+
 .nocode {
   width: 350px;
   height: 350px;
-  margin: 100px;
+  cursor: pointer;
+  margin: 10%;
   display: block;
   background-image: url("../components/nocode.svg");
   background-repeat: no-repeat;

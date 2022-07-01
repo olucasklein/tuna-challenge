@@ -13,6 +13,7 @@ body {
 
 .logotuna {
   width: 154px;
+  cursor: pointer;
   height: 150px;
   display: block;
   background-image: url("../components/logotuna.svg");
@@ -24,6 +25,7 @@ body {
 .nocode {
   width: 350px;
   height: 350px;
+  cursor: pointer;
   margin: 100px;
   display: block;
   background-image: url("../components/nocode.svg");

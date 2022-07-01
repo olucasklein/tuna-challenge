@@ -1,0 +1,66 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #fff;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+
+.logotuna {
+  width: 154px;
+  cursor: pointer;
+  height: 150px;
+  display: block;
+  background-image: url("../components/logotuna.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.logotuna:hover{
+  width: 168px;
+  transition: 1s;
+}
+
+.nocode {
+  width: 350px;
+  height: 350px;
+  cursor: pointer;
+  margin: 100px;
+  display: block;
+  background-image: url("../components/nocode.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+
+
+footer {
+  height: 23px;
+  padding: 12px 24px;
+  margin: auto;
+  text-align: center;
+  background-color: #f9f9f9;
+  color: #999;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: fixed;
+}
+
+footer a {
+  text-decoration: none;
+  color: #31b34e;
+  transition: 0.3s;
+}
+
+footer a:hover {
+  color: #999;
+  font-size: 20px;
+}

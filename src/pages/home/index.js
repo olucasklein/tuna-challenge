@@ -98,7 +98,7 @@ function App(props) {
           <div className="cards">
             {arrayCentroO.map((data, key) => {
               return (
-                <S.Li></S.Li>
+                <S.Li>
                   📍 {data.nome} - {data.sigla}
                 </S.Li>
               );

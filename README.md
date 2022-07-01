@@ -6,11 +6,6 @@
 
 📖 - Funcionamento da aplicação: na página inicial, usa-se uma api para mostrar as localizações em que o serviço está presente atualmente
 
-<h2> 🎯 Ficou pendente: </h2>
-
-- Divisão dos Cards por regiões
-- Adicionar responsividade para mobile em geral
-
 <h2>🚀 Tecnologias utilizadas: </h2>
 
 - HTML

@@ -58,7 +58,7 @@ function App(props) {
       </S.Main>
       <S.BoxCards>
         <S.Card1>
-          <h1>Norte</h1>
+          <h1>Norte - N</h1>
           <div className="cards">
             {arrayNorte.map((data, key) => {
               return (
@@ -70,7 +70,7 @@ function App(props) {
           </div>
         </S.Card1>
         <S.Card2>
-          <h1>Sul</h1>
+          <h1>Sul - S</h1>
           <div className="cards">
             {arraySul.map((data, key) => {
               return (
@@ -82,7 +82,7 @@ function App(props) {
           </div>
         </S.Card2>
         <S.Card3>
-          <h1>Sudeste</h1>
+          <h1>Sudeste - SE</h1>
           <div className="cards">
             {arraySudeste.map((data, key) => {
               return (
@@ -94,7 +94,7 @@ function App(props) {
           </div>
         </S.Card3>
         <S.Card4>
-          <h1>Centro-Oeste</h1>
+          <h1>Centro-Oeste - CO</h1>
           <div className="cards">
             {arrayCentroO.map((data, key) => {
               return (
@@ -106,7 +106,7 @@ function App(props) {
           </div>
         </S.Card4>
         <S.Card5>
-          <h1>Nordeste</h1>
+          <h1>Nordeste - NE</h1>
           <div className="cards">
             {arrayNordeste.map((data, key) => {
               return (

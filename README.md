@@ -21,10 +21,10 @@
 <h2> 🎯 Ficou pendente: (Tuna me ajudou a refatorar o código) </h2>
 <p> Opcionais </p>
 
-- Adicionar maior flexibilidade ao código, por exemplo, se uma nova região fosse adicionada, o código se comportaria automaticamente e geraria o card (Ainda não consegui fazer!)
+- Adicionar maior flexibilidade ao código, por exemplo, se uma nova região fosse adicionada, o código se comportaria automaticamente e geraria o card (Implementado com ajuda da Tuna!)
   (Minha ideia base para isso seria utilizar o map no array original recebido pela api, buscar as regiões, transformar em um array e utilizar como um id para gerar os cards, e a cidades, com a regiões criando os cards, eu utilizaria o array original para mapear os nome da cidades e por corretamente nos devidos cards)
 
-- Ordenar cada nome de estado no card de região alfebaticamente (Ainda não consegui fazer!)
+- Ordenar cada nome de estado no card de região alfebaticamente (Implementado com ajuda da Tuna!)
 
 <h2>Para iniciar o projeto use: </h2>
 git clone https://github.com/olucasklein/tuna-challenge.git

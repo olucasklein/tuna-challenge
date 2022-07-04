@@ -24,7 +24,7 @@
 - Adicionar maior flexibilidade ao código, por exemplo, se uma nova região fosse adicionada, o código se comportaria automaticamente e geraria o card (Ainda não consegui fazer!)
   (Minha ideia base para isso seria utilizar o map no array original recebido pela api, buscar as regiões, transformar em um array e utilizar como um id para gerar os cards, e a cidades, com a regiões criando os cards, eu utilizaria o array original para mapear os nome da cidades e por corretamente nos devidos cards)
 
-- Ordenar cada estado no card de região alfebaticamente (Ainda não consegui fazer!)
+- Ordenar cada nome de estado no card de região alfebaticamente (Ainda não consegui fazer!)
 
 <h2>Para iniciar o projeto use: </h2>
 git clone https://github.com/olucasklein/tuna-challenge.git

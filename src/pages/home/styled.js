@@ -110,45 +110,13 @@ export const BoxCards = styled.div`
   margin-bottom: 5vh;
 `;
 
-export const Card1 = styled.div`
+export const Card = styled.div`
   width: 100%;
   padding: 15px;
   margin: 100px;
   background: #f9f9f9;
   margin: 30px;
   max-width: 1100px;
-  margin: 0 auto;
-  position: relative;
-`;
-export const Card2 = styled.div`
-  width: 100%;
-  padding: 15px;
-  max-width: 1100px;
-  background: #f9f9f9;
-  margin: 0 auto;
-  position: relative;
-`;
-export const Card3 = styled.div`
-  width: 100%;
-  max-width: 1100px;
-  padding: 15px;
-  background: #f9f9f9;
-  margin: 0 auto;
-  position: relative;
-`;
-export const Card4 = styled.div`
-  width: 100%;
-  max-width: 1100px;
-  padding: 15px;
-  background: #f9f9f9;
-  margin: 0 auto;
-  position: relative;
-`;
-export const Card5 = styled.div`
-  width: 100%;
-  max-width: 1100px;
-  padding: 15px;
-  background: #f9f9f9;
   margin: 0 auto;
   position: relative;
 `;

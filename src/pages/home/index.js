@@ -1,39 +1,50 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import * as S from "./styled";
-import { useHistory } from "react-router-dom";
-import logotuna from "../../components/logotuna.svg";
-import nocode from "../../components/nocode.svg";
 
 function App(props) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
-      .then((response) => {
-        setData(response.data);
-      })
+    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados").then((response) => {
 
-      .catch(() => {
-        console.log("Error!");
-      });
+      const listaRegioes = response.data.reduce((listaTratada, estado) => {
+
+        let regiao = listaTratada.find(regiao => regiao.sigla === estado.regiao.sigla);
+
+        if (regiao) {
+
+          regiao.estados.push({
+            id: estado.id,
+            nome: estado.nome,
+            sigla: estado.sigla
+          });
+          regiao.estados.sort((item1, item2) => item1.nome < item2.nome ? -1 : 1);
+
+        } else {
+
+          listaTratada.push({
+            sigla: estado.regiao.sigla,
+            nome: estado.regiao.nome,
+            estados: [{
+              id: estado.id,
+              nome: estado.nome,
+              sigla: estado.sigla
+            }]
+          });
+
+        }
+        return listaTratada;
+      }, []);
+
+      setData(listaRegioes);
+
+    }).catch(() => {
+      setData([{ nome: "Erro ao consultar API", estados: [] }]);
+    });
   }, []);
 
-  const arrayNorte = data.filter((item) => item.regiao.sigla === "N");
-  console.log(arrayNorte);
 
-  const arraySul = data.filter((item) => item.regiao.sigla === "S");
-  console.log(arraySul);
-
-  const arrayNordeste = data.filter((item) => item.regiao.sigla === "NE");
-  console.log(arrayNordeste);
-
-  const arraySudeste = data.filter((item) => item.regiao.sigla === "SE");
-  console.log(arraySudeste);
-
-  const arrayCentroO = data.filter((item) => item.regiao.sigla === "CO");
-  console.log(arrayCentroO);
 
   return (
     <S.Content>
@@ -57,66 +68,22 @@ function App(props) {
         <div className="nocode"></div>
       </S.Main>
       <S.BoxCards>
-        <S.Card1>
-          <h1>Norte - N</h1>
-          <div className="cards">
-            {arrayNorte.map((data, key) => {
-              return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}
-                </S.Li>
-              );
-            })}
-          </div>
-        </S.Card1>
-        <S.Card2>
-          <h1>Sul - S</h1>
-          <div className="cards">
-            {arraySul.map((data, key) => {
-              return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}
-                </S.Li>
-              );
-            })}
-          </div>
-        </S.Card2>
-        <S.Card3>
-          <h1>Sudeste - SE</h1>
-          <div className="cards">
-            {arraySudeste.map((data, key) => {
-              return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}
-                </S.Li>
-              );
-            })}
-          </div>
-        </S.Card3>
-        <S.Card4>
-          <h1>Centro-Oeste - CO</h1>
-          <div className="cards">
-            {arrayCentroO.map((data, key) => {
-              return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}
-                </S.Li>
-              );
-            })}
-          </div>
-        </S.Card4>
-        <S.Card5>
-          <h1>Nordeste - NE</h1>
-          <div className="cards">
-            {arrayNordeste.map((data, key) => {
-              return (
-                <S.Li>
-                  📍 {data.nome} - {data.sigla}
-                </S.Li>
-              );
-            })}
-          </div>
-        </S.Card5>
+        {data.map(regiao => {
+          return (
+            <S.Card>
+              <h1>{regiao.nome} - {regiao.sigla}</h1>
+              <div className="cards">
+                {regiao.estados.map(estado => {
+                  return (
+                    <S.Li>
+                      📍 {estado.nome} - {estado.sigla}
+                    </S.Li>
+                  );
+                })}
+              </div>
+            </S.Card>
+          );
+        })}
       </S.BoxCards>
     </S.Content>
   );

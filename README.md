@@ -18,7 +18,7 @@
 - Styled Components
 - Axios
 
-<h2> 🎯 Ficou pendente: </h2>
+<h2> 🎯 Ficou pendente: (Tuna me ajudou a refatorar o código) </h2>
 <p> Opcionais </p>
 
 - Adicionar maior flexibilidade ao código, por exemplo, se uma nova região fosse adicionada, o código se comportaria automaticamente e geraria o card (Ainda não consegui fazer!)
